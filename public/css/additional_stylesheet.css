@@ -1,0 +1,62 @@
+html { background-color:  #ffffff; }
+
+/* social media bar */
+.bg-socialmediabar {
+    background-color:     hsla(120, 75%, 75%, 0.4);
+}
+.list-inline i {
+    color:                #000000;
+}
+/*
+.list-inline li span {
+    color:                #212529;
+}
+*/
+/* MEDIA QUERIES */
+/* schermbreedte >= medium */
+@media (min-width: 768px) {
+    nav.navbar-expand-md hgroup h1 {
+        font-family:      'Sorts Mill Goudy', serif;
+        color:            olive;
+    }
+    .add-right-border {
+        border-right:     1px solid black;
+        font-weight:      bold;
+    }
+    #main-navigation { 
+        background-color: navy;
+        max-height:       44px;
+    }
+    #main-navigation>li>a {
+        color:            white;
+        border-right:     4px solid white;
+        font-size:        1.1rem;
+    }
+    #main-navigation>li>a:hover {
+        color:            #f6993f;
+    }
+}
+/* schermbreedte < medium */
+@media (max-width: 767.98px) {
+    #main-navigation {
+        border-bottom:    2px solid #f6993f;
+    }
+    .navbar-collapse form {
+        padding:          10px 0;
+        border-bottom:    2px solid #f6993f;
+    }
+}
+/* schermbreedte small */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .navbar.navbar-expand-md .container {
+        padding-left:     15px;
+    }    
+}
+
+/* alert met betrekking tot contactformulier */
+#contact-alert {
+    display: none;
+}
+.invalid-feedback {
+    font-size: .9rem;
+}

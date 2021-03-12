@@ -1,0 +1,49 @@
+// In this file => override Sass variables!!
+// Body
+$body-color: #000000;
+// $body-bg: #f8fafc;
+$body-bg: #ffffff;
+
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+$colors: (
+    "olive":         #bab86c
+);
+
+
+
+// Miscellaneous
+$theme-colors: (
+    "medium-low":    #ced4da,
+    "medium-high":   #adb5bd
+);
+$btn-white-space: nowrap;
+$card-height: 100%;
+
+// genereer contrasterende kleur voor elke themakleur
+@each $color, $value in $theme-colors {
+    .swatch-#{$color} {
+        color: color-yiq($value);
+    }
+}
+
+// maak de themakleuren ook beschikbaar als achtergrondkleur
+// later!!
+
+// generate alert modifier classes
+// later!!
