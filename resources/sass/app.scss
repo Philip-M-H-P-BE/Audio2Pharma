@@ -1,11 +1,15 @@
-// Fonts
+// Blok I: Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Sorts+Mill+Goudy:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Sedgwick+Ave&display=swap');
 
+// Blok II: Required
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
 
-// Variables
-@import 'variables';
+// Blok III: Variables
+@import 'variables';       // volgorde Variables - Bootstrap aanhouden zoals hier gedefinieerd met oog op customized build!!!
 
-// Bootstrap
+// Blok IV: Bootstrap
 @import '~bootstrap/scss/bootstrap';

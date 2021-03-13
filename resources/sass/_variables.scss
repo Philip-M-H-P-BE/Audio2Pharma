@@ -4,10 +4,12 @@ $body-color: #000000;
 // $body-bg: #f8fafc;
 $body-bg: #ffffff;
 
+
 // Typography
 $font-family-sans-serif: 'Nunito', sans-serif;
 $font-size-base: 0.9rem;
 $line-height-base: 1.6;
+
 
 // Colors
 $blue: #3490dc;
@@ -25,25 +27,22 @@ $colors: (
     "olive":         #bab86c
 );
 
-
-
-// Miscellaneous
-$theme-colors: (
+$theme-colors: map-merge(
+  (
     "medium-low":    #ced4da,
-    "medium-high":   #adb5bd
+    "medium-high":   #adb5bd    
+  ),
+  $theme-colors
 );
-$btn-white-space: nowrap;
-$card-height: 100%;
 
-// genereer contrasterende kleur voor elke themakleur
+// generate contrasting color swatches from our $theme-colors map:
 @each $color, $value in $theme-colors {
     .swatch-#{$color} {
         color: color-yiq($value);
     }
 }
 
-// maak de themakleuren ook beschikbaar als achtergrondkleur
-// later!!
 
-// generate alert modifier classes
-// later!!
+// miscellaneous
+$btn-white-space: nowrap;
+$card-height: 100%;

@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-12 col-md-8 offset-md-2">
             <h1 class="display-3">Hallo!!!</h1>
-            <p class="lead">Voorlopig is er hier nog niets...!!!!!</p>
+            <p class="lead swatch-medium-low">Voorlopig is er hier nog niets...!!!!!</p>
             <p>
                 <button type="button" class="btn btn-medium-high">Experiment mbt build</button>
             </p>
