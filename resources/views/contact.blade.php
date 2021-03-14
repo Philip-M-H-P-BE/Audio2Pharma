@@ -1,5 +1,8 @@
 @extends('layouts.master')
 @section('title', 'Contacteer ons voor info of een afspraak')
+@section('header')
+    @include('partials.nieuwe_header_op_maat')
+@endsection
 @section('content')
     <div class="row">
         <div class="col-12 col-md-8 offset-md-2">

@@ -1,6 +1,8 @@
 @extends('layouts.master')
 @section('title', 'Registreren via het formulier')
-
+@section('header')
+    @include('partials.nieuwe_header_op_maat')
+@endsection
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -89,4 +91,7 @@
         </div>
     </div>
 </div>
+@endsection
+@section('footerScripts');
+    @parent
 @endsection

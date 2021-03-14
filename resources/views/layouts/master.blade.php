@@ -18,7 +18,8 @@
 </head>
 <body>
     <div id="app">
-        @include('partials.nieuwe_header_op_maat')
+        @section('header')
+        @show
         <div class="container">
             <main class="py-4">
                 @include('partials.errors')

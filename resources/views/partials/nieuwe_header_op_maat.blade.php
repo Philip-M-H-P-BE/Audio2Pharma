@@ -45,7 +45,7 @@
                                 <a class="dropdown-item" href="#">Overige</a>
                             </div>
                         </li>
-                        <li class="nav-item"><a class="nav-link px-md-3" href="#">Over ons</a></li>
+                        <li class="nav-item"><a class="nav-link px-md-3" href="{{ route('about-us-page') }}">Over ons</a></li>
                         <li class="nav-item"><a class="nav-link px-md-3" href="{{ route('contact-page') }}">Contact</a></li>
                     </ul>
                     <button class="d-none d-md-flex d-lg-none align-self-md-center btn btn-success" type="button" data-toggle="modal" data-target="#modalInlineForm"><span class="badge badge-pill badge-light mr-2"><img src="{{ asset('bootstrap_icons/bootstrap-icons-1.1.0/search.svg') }}" alt="Klik en open formulier"></span>Zoeken</button>

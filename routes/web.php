@@ -17,9 +17,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 */
+
+// hoofdnavigatie
 Route::get('/', [App\Http\Controllers\HomePageController::class, 'index'])->name('home-page');
 Route::get('contact', [App\Http\Controllers\ContactPageController::class, 'index'])->name('contact-page');
+Route::get('aboutus', [App\Http\Controllers\AboutUsPageController::class, 'index'])->name('about-us-page');
 
+// secundaire navigatie
 // routes mbt inloggen, registreren, authenticatie...
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
