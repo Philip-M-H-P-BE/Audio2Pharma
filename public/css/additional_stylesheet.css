@@ -54,9 +54,10 @@ html { background-color:  #ffffff; }
 }
 
 /* alert met betrekking tot contactformulier */
-#contact-alert {
-    display: none;
-}
+    #contact-alert {
+        display: none;
+    }
+/* formuliervalidatie */
 .invalid-feedback {
     font-size: .9rem;
 }

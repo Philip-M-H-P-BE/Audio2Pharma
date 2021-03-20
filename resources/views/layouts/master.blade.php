@@ -21,8 +21,9 @@
         @section('header')
         @show
         <div class="container">
-            <main class="py-4">
-                @include('partials.errors')
+            <main class="pb-4 pt-2">
+                @yield('breadcrumbs')
+                @include('partials.errors')                
                 @yield('content')
             </main>
         </div>

@@ -18,6 +18,10 @@ $('#contactForm').on('submit', function(e) {
             contenttype: 'application/json'
         }).done(function(data) {
             console.log(data);
+            if (!$('#contact-alert').hasClass('alert-success')) {
+                $('#contact-alert').addClass('alert-success')
+                                   .removeClass('alert-danger pb-0 fade show alert-dismissible');
+            }
             $('#contact-alert')
                 .slideDown('slow', function() {
                     setTimeout(function() {
@@ -30,11 +34,16 @@ $('#contactForm').on('submit', function(e) {
         }).fail(function(jqXhr, textStatus, errorThrown) {
             $('#contactForm').removeClass('was-validated');
             $('#contact-alert')
-                .addClass('alert-danger pb-0')
+                .addClass('alert-danger pb-0 fade show alert-dismissible')
                 .removeClass('alert-success')
-                .html('<h5>Er heeft zich een fout voorgedaan:</h5>'
+                .html(
+                          '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'
+                          + '<span aria-hidden="true">&times;</span></button>'
+                          + '<h5 class="alert-heading">Foutmelding</h5>'
+                          + '<hr>'
                           + '<ul><li>' + textStatus + ': ' + errorThrown + '</li><li>'
-                          + jqXhr.statusCode.name + ': ' + jqXhr.status + '</li></ul>')
+                          + jqXhr.statusCode.name + ': ' + jqXhr.status + '</li></ul>'                          
+                )
                 .slideDown('slow', function() {
                     console.log(jqXhr);
                     console.log(textStatus + '\n' + errorThrown);
