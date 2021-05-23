@@ -3,6 +3,13 @@
 @section('header')
     @include('partials.nieuwe_header_op_maat')
 @endsection
+@section('breadcrumbs')
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">Home</li>
+        </ol>
+    </nav>
+@endsection
 @section('content')
     <div class="row">
         <div class="col-12">

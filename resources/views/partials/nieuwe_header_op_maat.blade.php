@@ -5,17 +5,17 @@
             <div class="row py-2 align-items-center">
                 <div class="col-sm-5 col-md-4"> <!-- social media icons -->
                     <ul class="list-inline mb-1 my-sm-0">
-                        <li class="list-inline-item mr-xs-4 mr-md-2"><a href="#"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li> <!-- LinkedIn -->
-                        <li class="list-inline-item mr-xs-4 mr-md-2"><a href="#"><i class="fab fa-facebook-square fa-2x" aria-hidden="true"></i></a></li> <!-- Facebook -->
-                        <li class="list-inline-item mr-xs-4 mr-md-2"><a href="#"><i class="fab fa-twitter-square fa-2x" aria-hidden="true"></i></a></li> <!-- Twitter -->
-                        <li class="list-inline-item mr-xs-4 mr-md-2"><a href="#"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a></li> <!-- Instagram -->
+                        <li class="list-inline-item mr-xs-4 mr-md-3"><a href="#" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Fuck you <strong>BCF</strong>!"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a></li> <!-- LinkedIn -->
+                        <li class="list-inline-item mr-xs-4 mr-md-3"><a href="#"><i class="fab fa-facebook-square fa-2x" aria-hidden="true"></i></a></li> <!-- Facebook -->
+                        <li class="list-inline-item mr-xs-4 mr-md-3"><a href="#"><i class="fab fa-twitter-square fa-2x" aria-hidden="true"></i></a></li> <!-- Twitter -->
+                        <li class="list-inline-item mr-xs-4 mr-md-3"><a href="#"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a></li> <!-- Instagram -->
                         <!-- nakijken aria-hidden="true" -->
                     </ul>
                 </div>
                 <div class="col-sm-7 col-md-8"> <!-- telefoonnummer en e-mailadres -->
-                    <ul class="list-inline my-0 float-sm-right">
-                        <li class="list-inline-item pt-3 pt-sm-0"><span class="fa fa-phone-square fa-lg">&nbsp; +32 479 13 94 43</span></li>
-                        <li class="list-inline-item pt-3 pt-md-0 pl-md-2"><span class="fa fa-envelope-square fa-lg">&nbsp; info@earbalancevision.be</span></li>
+                    <ul class="list-inline my-0 float-md-right">
+                        <li class="list-inline-item pt-3 pt-sm-0 pr-4 pr-sm-0"><span class="fa fa-phone-square fa-lg">&nbsp; +32 479 13 94 43</span></li>
+                        <li class="list-inline-item pt-3 pt-md-0 pl-md-4"><span class="fa fa-envelope-square fa-lg">&nbsp; info@audio2pharma.be</span></li>
                     </ul>
                 </div>
             </div>  <!-- row -->
@@ -36,8 +36,8 @@
                     <ul class="navbar-nav align-self-md-end" id="main-navigation"> <!-- vervangt mr-md-auto -->
                         <li class="nav-item"><a class="nav-link px-md-3" href="{{ route('home-page') }}">Home</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle px-md-3" data-toggle="dropdown" href="#">Diensten</a>
-                            <div class="dropdown-menu">
+                            <a id="dropdownServices" class="nav-link dropdown-toggle px-md-3" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Diensten</a>  <!-- NAKIJKEN!!! -->
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownServices">
                                 <a class="dropdown-item" href="#">Evenwicht</a>
                                 <a class="dropdown-item" href="#">Oor</a>
                                 <a class="dropdown-item" href="#">Oog</a>
@@ -56,7 +56,7 @@
                 </div>
                 <!-- TEXT -->
                 <hgroup class="align-self-md-start d-none d-md-block">
-                    <h1 class="pt-md-2 pb-md-1 display-4">Audio<span class="display-3">2</span>Pharma</h1>
+                    <h1 class="pt-md-2 pb-md-1 mb-md-1 display-4">Audio<span class="display-3">2</span>Pharma</h1>
                     <!-- tagline -->
                 </hgroup>                
                 <!--  -->

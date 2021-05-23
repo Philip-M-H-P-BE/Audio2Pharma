@@ -33,6 +33,7 @@
     </div>
     @section('footerScripts')
         <script src="{{ asset('js/modalWithForm.js') }}" defer></script> <!-- defer is noodzakelijk!! -->
+        <script src="{{ asset('js/miscellaneous.js') }}" defer></script>
     @show    
 </body>
 </html>
