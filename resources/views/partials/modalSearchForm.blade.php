@@ -1,5 +1,5 @@
 <!-- Modal -->
-<div class="modal fade" data-backdrop="static" data-keyboard="false" id="modalInlineForm" tabindex="-1" role="dialog" aria-labelledby="modalInlineFormLabel" aria-hidden="true">
+<div class="modal fade" data-backdrop="static" data-keyboard="false" id="modalInlineForm" tabindex="-1" role="dialog" aria-labelledby="modalInlineFormLabel" aria-describedby="this modal contains a search form" aria-hidden="true"> {{-- Note that you don’t need to add role="dialog" since we already add it via JavaScript. --}}
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">

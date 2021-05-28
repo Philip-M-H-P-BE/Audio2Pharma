@@ -50,8 +50,8 @@
                     </ul>
                     <button class="d-none d-md-flex d-lg-none align-self-md-center btn btn-success" type="button" data-toggle="modal" data-target="#modalInlineForm"><span class="badge badge-pill badge-light mr-2"><img src="{{ asset('bootstrap_icons/bootstrap-icons-1.1.0/search.svg') }}" alt="Klik en open formulier"></span>Zoeken</button>
                     <form id="navbar-search-form" class="form-inline d-flex d-md-none d-lg-flex align-self-lg-center" novalidate> <!-- ml-md-auto -->
-                        <input class="form-control mr-sm-3 mr-md-4 flex-grow-1" type="search" placeholder="Zoeken" aria-label="Search">
-                        <button class="btn btn-outline-success mt-2 mb-1 my-sm-0" type="submit">Zoeken</button>
+                        <input class="form-control mr-sm-3 mr-lg-4 flex-grow-1" type="search" placeholder="Zoeken" aria-label="Search">
+                        <button class="btn btn-outline-success mt-2 mb-1 my-sm-0" type="submit">Zoeken</button> <!-- uitvissen flex grow bij schermbreedte extra small -->
                     </form>
                 </div>
                 <!-- TEXT -->

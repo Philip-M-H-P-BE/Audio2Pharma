@@ -51,3 +51,4 @@ $('#contactForm').on('submit', function(e) {
         });
     }
 });
+// Nog doen: sluitklik op alert danger afvangen en formulier resetten!!!

@@ -1,7 +1,11 @@
-// modal search form
+/* modal search form: HTML5 attribuut autofocus zal niet werken binnen modal, 
+   we geven het invoerveld de focus met behulp van JavaScript 
+*/
 $('#modalInlineForm').on('shown.bs.modal', function () {
     $('.modal-body #searchfield').trigger('focus');
 });
+// Kan dit ook bereikt worden met attribuut data-focus="true" ?
+
 
 // form validation
 (function() {
