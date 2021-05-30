@@ -7,12 +7,13 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class ReplyToSubmittedContactForm extends Mailable
+class MailToContactFormSubmitter extends Mailable
 {
     use Queueable, SerializesModels;
 
     public $name;
     public $boodschap;
+
 
     /**
      * Create a new message instance.
@@ -32,7 +33,7 @@ class ReplyToSubmittedContactForm extends Mailable
      */
     public function build()
     {
-        return $this->subject('ALLEMAAL KLOTE!!!')
+        return $this->subject('verzending van het contactformulier op...')
                     ->view('emails.reply');
     }
 }
