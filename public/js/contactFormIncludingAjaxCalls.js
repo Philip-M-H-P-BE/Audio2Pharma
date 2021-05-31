@@ -52,3 +52,11 @@ $('#contactForm').on('submit', function(e) {
     }
 });
 // Nog doen: sluitklik op alert danger afvangen en formulier resetten!!!
+$('#contact-alert').on('close.bs.alert', function () {
+    document.getElementById('contactForm').reset();
+    $('#contactForm input#name').trigger('focus');
+});
+
+$('#contact-tab').on('shown.bs.tab', function (event) {
+    $('#contactForm input#name').trigger('focus');
+});

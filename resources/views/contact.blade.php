@@ -16,21 +16,21 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-header bg-transparent">
-                    <ul class="nav nav-pills card-header-pills">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#contact" data-toggle="tab">ccntactformulier</a> <!-- OPLETTEN!!!! -->
+                    <ul class="nav nav-pills nav-justified card-header-pills" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="contact-tab" data-toggle="pill" href="#contact" role="tab" aria-controls="contact" aria-selected="true">ccntactformulier</a> <!-- OPLETTEN!!!! -->
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#info" data-toggle="tab">info</a>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="info-tab" data-toggle="pill" href="#info" role="tab" aria-controls="info" aria-selected="false">info</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#kaart" data-toggle="tab">kaart</a>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="kaart-tab" data-toggle="pill" href="#kaart" role="tab" aria-controls="kaart" aria-selected="false">kaart</a>
                         </li>
                     </ul>
                 </div>
                 <div class="card-body">
                     <div class="tab-content"> <!-- OPLETTEN!!!! -->
-                        <div class="tab-pane fade show active" id="contact"> <!-- OPLETTEN!!!! -->                    
+                        <div class="tab-pane fade show active" id="contact" role="tabpanel" aria-labelledby="contact-tab"> <!-- OPLETTEN!!!! -->                    
                             <div class="row">
                                 <div class="col-12 col-md-8 offset-md-2">
                                     <div class="alert" id="contact-alert" role="alert">
@@ -85,10 +85,10 @@
                                 </div>  <!-- col -->
                             </div>  <!-- row -->
                         </div> <!-- tab-pane OPLETTEN!!!! -->                    
-                        <div class="tab-pane fade" id="info"> <!-- OPLETTEN!!!! -->
+                        <div class="tab-pane fade" id="info" role="tabpanel" aria-labelledby="info-tab"> <!-- OPLETTEN!!!! -->
                             KUT!!!!!  
                         </div> <!-- OPLETTEN!!!! -->
-                        <div class="tab-pane fade" id="kaart"> <!-- OPLETTEN!!!! -->
+                        <div class="tab-pane fade" id="kaart" role="tabpanel" aria-labelledby="kaart-tab"> <!-- OPLETTEN!!!! -->
                             KAART EN ROUTE!!!!!  
                         </div> <!-- OPLETTEN!!!! -->
                     </div> <!-- tab-content -->
@@ -103,5 +103,5 @@
 @endsection
 @section('footerScripts');
     @parent
-    <script src="{{ asset('js/defineAjaxCalls.js') }}" defer></script>
+    <script src="{{ asset('js/contactFormIncludingAjaxCalls.js') }}" defer></script>
 @endsection

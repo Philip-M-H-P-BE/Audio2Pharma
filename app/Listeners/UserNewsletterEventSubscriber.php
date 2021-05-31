@@ -21,7 +21,7 @@ class UserNewsletterEventSubscriber
         );
 
         $events->listen(
-            \App\Event\UserCancelledNewsletterSubscription::class,
+            \App\Events\UserCancelledNewsletterSubscription::class,
             'App\Listeners\UserNewsletterEventSubscriber@onUserCancellation'           
         );
     }
